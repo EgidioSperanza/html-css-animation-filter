@@ -489,4 +489,62 @@ a.btn-restart:hover{
     font-size: 2em;
 }
 
+.box-vertical{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.box-horizontal{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter{
+    width:50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900;
+    font-size: 50px;
+}
+
+.letter-box:not(.letter-box.letter){
+    width: 0;
+    height: 0;
+    visibility: hidden;
+    animation: showLetter 10s linear 2s 1 normal forwards;
+
+}
+
+@keyframes showLetter {
+    from{
+        width: 0;
+        height: 0;
+        visibility: visible;
+        color: transparent;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+        visibility: visible;
+        line-height: 50px;
+        text-align: center;
+        font-family: monospace;
+        font-weight: 900;
+        font-size: 50px;
+        color: #000;
+    }
+    /* 100%{
+        width: 0;
+        height: 0;
+        visibility: visible;
+        color: transparent;
+        flex-direction: column;
+    } */
+}
