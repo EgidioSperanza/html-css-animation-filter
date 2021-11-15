@@ -81,7 +81,7 @@
     box-sizing: border-box;
 }
 
-h1{
+h1, p{
     margin-left: 50px;
 }
 .box-container{
