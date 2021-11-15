@@ -512,6 +512,7 @@ a.btn-restart:hover{
     font-family: monospace;
     font-weight: 900;
     font-size: 50px;
+    animation: letterColor 10s linear 2s 1 normal forwards;
 }
 
 .letter-box:not(.letter-box.letter){
@@ -519,7 +520,6 @@ a.btn-restart:hover{
     height: 0;
     visibility: hidden;
     animation: showLetter 10s linear 2s 1 normal forwards;
-
 }
 
 @keyframes showLetter {
@@ -547,4 +547,14 @@ a.btn-restart:hover{
         color: transparent;
         flex-direction: column;
     } */
+}
+@keyframes letterColor {
+    from{
+        color: #000;
+        background-color: transparent;
+    }
+    to{
+        color: darkred;
+        background-color: #000;
+    }
 }
