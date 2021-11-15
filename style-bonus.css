@@ -167,18 +167,18 @@ h1{
     height: 30px;
 }
 
-.bar-30{
-    animation: perc30 3s linear .5s 1 normal forwards;
+.desktop:hover .bar-30{
+    animation: perc30 2s linear .5s forwards;
 }
 
-.bar-60{
-    animation: perc60 4s linear .5s 1 normal forwards;
+.desktop:hover .bar-60{
+    animation: perc60 2s linear .5s forwards;
 }
 
-.bar-75{
-    animation: perc75 5s linear .5s 1 normal forwards;
+.desktop:hover .bar-75{
+    animation: perc75 2s linear .5s forwards;
 }
 
-.bar-100{
-    animation: perc100 6s linear .5s 1 normal forwards;
+.desktop:hover .bar-100{
+    animation: perc100 2s linear .5s forwards;
 }
