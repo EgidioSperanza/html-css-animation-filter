@@ -541,7 +541,7 @@ a.btn-restart:hover{
     font-family: monospace;
     font-weight: 900;
     font-size: 50px;
-    animation: letterColor 10s linear 2s 1 normal forwards;
+    animation: letterColor 3s linear 1s 1 normal forwards;
 }
 
 .letter-box:not(.letter-box.letter){
