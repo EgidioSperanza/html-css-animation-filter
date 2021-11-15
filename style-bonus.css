@@ -145,6 +145,35 @@
       border-color: transparent
     }
 }
+@keyframes showLetter {
+    from{
+        width: 0;
+        height: 0;
+        visibility: visible;
+        color: transparent;
+    }
+    to{
+        width: 50px;
+        height: 50px;
+        visibility: visible;
+        line-height: 50px;
+        text-align: center;
+        font-family: monospace;
+        font-weight: 900;
+        font-size: 50px;
+        color: #000;
+    }
+}
+@keyframes letterColor {
+    from{
+        color: #000;
+        background-color: transparent;
+    }
+    to{
+        color: darkred;
+        background-color: #000;
+    }
+}
 /* ----------------------------------------- */
 *{
     padding:0;
@@ -519,42 +548,5 @@ a.btn-restart:hover{
     width: 0;
     height: 0;
     visibility: hidden;
-    animation: showLetter 10s linear 2s 1 normal forwards;
-}
-
-@keyframes showLetter {
-    from{
-        width: 0;
-        height: 0;
-        visibility: visible;
-        color: transparent;
-    }
-    to{
-        width: 50px;
-        height: 50px;
-        visibility: visible;
-        line-height: 50px;
-        text-align: center;
-        font-family: monospace;
-        font-weight: 900;
-        font-size: 50px;
-        color: #000;
-    }
-    /* 100%{
-        width: 0;
-        height: 0;
-        visibility: visible;
-        color: transparent;
-        flex-direction: column;
-    } */
-}
-@keyframes letterColor {
-    from{
-        color: #000;
-        background-color: transparent;
-    }
-    to{
-        color: darkred;
-        background-color: #000;
-    }
+    animation: showLetter 3s linear 1s 1 normal forwards;
 }
